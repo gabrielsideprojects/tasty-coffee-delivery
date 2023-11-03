@@ -10,20 +10,18 @@ export const HeaderContainer = styled.header`
     gap: 0.5rem;
 
     a {
-      width: 3rem;
-      height: 3rem;
-
+      width: 2.5rem;
+      height: 2.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      color: ${(props) => props.theme['gray-100']};
-
-      border-top: 3px solid transparent;
-      border-bottom: 3px solid transparent;
-
-      &:hover {
-        border-bottom: 3px solid ${(props) => props.theme['green-500']};
+      padding: 0.2rem;
+      background: ${(props) => props.theme['yellow-light']};
+      border-width: 0;
+      border-radius: 0.3rem;
+      &:active,
+      &:focus {
+        box-shadow: none !important;
       }
     }
   }
