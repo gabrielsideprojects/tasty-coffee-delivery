@@ -26,3 +26,9 @@ export const HeaderContainer = styled.header`
     }
   }
 `
+export const LocationAndCartContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+`
