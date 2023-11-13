@@ -1,9 +1,11 @@
-import { CoffeeListTitle } from './styles'
+import { CoffeeListItem } from './CoffeeListItem'
+import { CoffeeListMainContainer, CoffeeListTitle } from './styles'
 
 export function CoffeeList() {
   return (
-    <div>
+    <CoffeeListMainContainer>
       <CoffeeListTitle>Nossos cafés</CoffeeListTitle>
-    </div>
+      <CoffeeListItem />
+    </CoffeeListMainContainer>
   )
 }
