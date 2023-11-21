@@ -12,6 +12,7 @@ import {
   CoffeeTextName,
 } from './styles'
 import coffeeExpresso from '../../../../../assets/coffee-expresso.svg'
+import { AddMinusCounter } from './AddMinusCounter'
 export function CoffeeListItem() {
   return (
     <CoffeeListItemContainer>
@@ -30,6 +31,7 @@ export function CoffeeListItem() {
           <CoffeePricePrefixText>R$</CoffeePricePrefixText>
           <CoffeePriceValueText>9,90</CoffeePriceValueText>
         </CoffeePriceContainer>
+        <AddMinusCounter />
       </CoffeeBottomContainer>
     </CoffeeListItemContainer>
   )

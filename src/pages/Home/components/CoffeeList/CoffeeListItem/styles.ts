@@ -83,6 +83,7 @@ export const CoffeePriceValueText = styled.span`
 export const CoffeeBottomContainer = styled.div`
   display: flex;
   padding-bottom: 1rem;
+  align-items: center;
 `
 
 export const CoffeePriceContainer = styled.div`
