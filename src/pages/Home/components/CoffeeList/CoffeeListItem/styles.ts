@@ -84,9 +84,25 @@ export const CoffeeBottomContainer = styled.div`
   display: flex;
   padding-bottom: 1rem;
   align-items: center;
+  justify-content: space-between;
 `
 
 export const CoffeePriceContainer = styled.div`
   display: flex;
   gap: 0.2rem;
+`
+
+export const LittleCartAndCounterContainer = styled.div`
+  display: flex;
+  gap: 0.5rem;
+`
+
+export const LittleCartButton = styled.div`
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.375rem;
+  background: ${(props) => props.theme['purple-dark']};
 `

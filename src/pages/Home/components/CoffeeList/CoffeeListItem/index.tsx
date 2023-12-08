@@ -10,10 +10,15 @@ import {
   CoffeeTagText,
   CoffeeTextDescription,
   CoffeeTextName,
+  LittleCartAndCounterContainer,
+  LittleCartButton,
 } from './styles'
 import coffeeExpresso from '../../../../../assets/coffee-expresso.svg'
 import { AddMinusCounter } from './AddMinusCounter'
+import { ShoppingCart } from 'phosphor-react'
+import { useTheme } from 'styled-components'
 export function CoffeeListItem() {
+  const theme = useTheme()
   return (
     <CoffeeListItemContainer>
       <CoffeeHeaderContainer>
@@ -31,7 +36,12 @@ export function CoffeeListItem() {
           <CoffeePricePrefixText>R$</CoffeePricePrefixText>
           <CoffeePriceValueText>9,90</CoffeePriceValueText>
         </CoffeePriceContainer>
-        <AddMinusCounter />
+        <LittleCartAndCounterContainer>
+          <AddMinusCounter />
+          <LittleCartButton>
+            <ShoppingCart size={22} color={theme.white} weight="fill" />
+          </LittleCartButton>
+        </LittleCartAndCounterContainer>
       </CoffeeBottomContainer>
     </CoffeeListItemContainer>
   )

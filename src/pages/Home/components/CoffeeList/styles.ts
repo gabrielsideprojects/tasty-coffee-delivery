@@ -5,6 +5,7 @@ export const CoffeeListMainContainer = styled.div`
   flex-direction: column;
   gap: 3rem;
   padding-bottom: 2rem;
+  margin-top: 6rem;
 `
 
 export const CoffeeListTitle = styled.h1`
@@ -14,4 +15,11 @@ export const CoffeeListTitle = styled.h1`
   font-style: normal;
   font-weight: 800;
   line-height: 2.6rem;
+`
+
+export const CoffeeListContainer = styled.ul`
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  flex-wrap: wrap;
 `
