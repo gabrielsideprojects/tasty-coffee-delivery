@@ -1,7 +1,11 @@
 import { useCallback, useState } from 'react'
-import { AddMinusButton, AddMinusContainer, AddMinusValue } from './styles'
-import minusIcon from '../../../../../../assets/minus-icon.svg'
-import plusIcon from '../../../../../../assets/plus-icon.svg'
+import {
+  AddMinusButton,
+  AddMinusContainer,
+  AddMinusValue,
+  MinusIconSvg,
+  PlusIconSvg,
+} from './styles'
 
 export function AddMinusCounter() {
   const [counter, setCounter] = useState(0)
@@ -16,13 +20,13 @@ export function AddMinusCounter() {
   return (
     <AddMinusContainer>
       <AddMinusButton onClick={handleDecreaseCounter}>
-        <img src={minusIcon} alt="" />
+        <MinusIconSvg />
       </AddMinusButton>
       <AddMinusValue>{counter}</AddMinusValue>
       <AddMinusButton
         onClick={() => setCounter((oldCounter) => oldCounter + 1)}
       >
-        <img src={plusIcon} alt="" />
+        <PlusIconSvg />
       </AddMinusButton>
     </AddMinusContainer>
   )

@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import MinusIcon from '../../../../../../assets/minus-icon.svg?react'
+import PlusIcon from '../../../../../../assets/plus-icon.svg?react'
 
 export const AddMinusContainer = styled.div`
   display: flex;
@@ -13,6 +15,7 @@ export const AddMinusButton = styled.button`
   background: none;
   width: 0.875rem;
   height: 0.875rem;
+  cursor: pointer;
   &:active,
   &:focus {
     box-shadow: none !important;
@@ -30,4 +33,18 @@ export const AddMinusValue = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: 1.3rem;
+`
+
+export const MinusIconSvg = styled(MinusIcon)`
+  fill: ${(props) => props.theme.purple};
+  &:hover {
+    fill: ${(props) => props.theme['purple-dark']};
+  }
+`
+
+export const PlusIconSvg = styled(PlusIcon)`
+  fill: ${(props) => props.theme.purple};
+  &:hover {
+    fill: ${(props) => props.theme['purple-dark']};
+  }
 `
