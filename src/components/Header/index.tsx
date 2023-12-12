@@ -10,7 +10,7 @@ export function Header() {
       <LocationAndCartContainer>
         <LocationLabel />
         <nav>
-          <NavLink to="/" title="Shop">
+          <NavLink to="/cart" title="Shop">
             <Cart />
           </NavLink>
         </nav>
